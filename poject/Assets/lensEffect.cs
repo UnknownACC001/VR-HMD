@@ -3,69 +3,49 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.PostProcessing;
 
 public class lensEffect : MonoBehaviour
 {
     
     public XRSocketInteractor lens;
     public XRSocketInteractor hmdInSocket;
-    public Material blurMaterial; // Das Material mit dem Blur-Effekt
-    public float setSlurStrength = 0.5f; // Die Stärke des Blur-Effekts
-    private float blurStrength = 0.0f;
-    public float distortion = 0.2f; // Adjust this value to control the distortion
-    public Camera cam;
+    
+    public PostProcessVolume postProcessingVolume1; // Drag your Post Processing Volume here
+    public PostProcessVolume postProcessingVolume2;
 
 
-    private void Start()
-    {
-        Camera.main.depthTextureMode = DepthTextureMode.Depth;
-    }
 
     private void Update()
     {
         
         if (hmdInSocket.selectTarget != null)
         {
-            if(lens.selectTarget.name=="Linsen")
+            if(lens.selectTarget.name == "Linsen 2")
             {
+                postProcessingVolume1.enabled = true;
 
-                blurStrength = setSlurStrength;
-                ApplyFisheyeEffect();
+
+            }
+            else if (lens.selectTarget.name == "Linsen 3")
+            {
+                postProcessingVolume2.enabled = true;
+
             }
             else
             {
-                blurStrength = 0.0f;
+                postProcessingVolume1.enabled = false;
+                postProcessingVolume2.enabled = false;
             }
         }
         else
         {
-
-            blurStrength = 0.0f;
+            postProcessingVolume1.enabled = false;
+            postProcessingVolume2.enabled = false;
         }
         
         
-    }
-    private void OnRenderImage(RenderTexture source, RenderTexture destination)
-    {
-        if (blurMaterial != null)
-        {
-            blurMaterial.SetFloat("_BlurStrength", blurStrength);
-            Graphics.Blit(source, destination, blurMaterial);
-        }
-        else
-        {
-            Graphics.Blit(source, destination);
-        }
-    }
-    void ApplyFisheyeEffect()
-    {
-       
-        Matrix4x4 matrix = cam.projectionMatrix;
-
-        matrix[0, 2] = distortion;
-        matrix[1, 2] = distortion;
-
-        cam.projectionMatrix = matrix;
     }
 
 }

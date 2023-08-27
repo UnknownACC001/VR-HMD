@@ -7,6 +7,7 @@
 -a="C:\Users\maxbe\Documents\GitHub\VR-HMD\poject\Library\PlayerScriptAssemblies\UnityEngine.UI.dll"
 -a="C:\Users\maxbe\Documents\GitHub\VR-HMD\poject\Library\PlayerScriptAssemblies\UnityEngine.SpatialTracking.dll"
 -a="C:\Users\maxbe\Documents\GitHub\VR-HMD\poject\Library\PlayerScriptAssemblies\Unity.Mathematics.dll"
+-a="C:\Users\maxbe\Documents\GitHub\VR-HMD\poject\Library\PlayerScriptAssemblies\Unity.Postprocessing.Runtime.dll"
 -a="C:\Users\maxbe\Documents\GitHub\VR-HMD\poject\Library\PlayerScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll"
 -a="C:\Users\maxbe\Documents\GitHub\VR-HMD\poject\Library\PlayerScriptAssemblies\Unity.XR.Interaction.Toolkit.Samples.StarterAssets.dll"
 -a="C:\Users\maxbe\Documents\GitHub\VR-HMD\poject\Library\PlayerScriptAssemblies\Unity.XR.CoreUtils.dll"
