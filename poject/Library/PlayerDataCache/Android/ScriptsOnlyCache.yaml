@@ -100,59 +100,59 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1540}
+      Script: {instanceID: 1542}
     - Class: 114
-      Script: {instanceID: 1942}
+      Script: {instanceID: 1944}
     - Class: 114
-      Script: {instanceID: 2420}
+      Script: {instanceID: 2422}
     - Class: 114
-      Script: {instanceID: 2746}
+      Script: {instanceID: 2748}
     - Class: 114
-      Script: {instanceID: 3076}
+      Script: {instanceID: 3078}
     - Class: 114
-      Script: {instanceID: 3096}
+      Script: {instanceID: 3098}
     - Class: 114
-      Script: {instanceID: 3256}
+      Script: {instanceID: 3258}
     - Class: 114
-      Script: {instanceID: 3328}
+      Script: {instanceID: 3330}
     - Class: 114
-      Script: {instanceID: 3368}
+      Script: {instanceID: 3370}
     - Class: 114
-      Script: {instanceID: 3388}
+      Script: {instanceID: 3390}
     - Class: 114
-      Script: {instanceID: 3626}
+      Script: {instanceID: 3628}
     - Class: 114
-      Script: {instanceID: 3696}
+      Script: {instanceID: 3698}
     - Class: 114
-      Script: {instanceID: 3946}
+      Script: {instanceID: 3948}
     - Class: 114
-      Script: {instanceID: 4152}
+      Script: {instanceID: 4154}
     - Class: 114
-      Script: {instanceID: 4302}
-    - Class: 114
-      Script: {instanceID: 4456}
+      Script: {instanceID: 4304}
     - Class: 114
       Script: {instanceID: 4458}
     - Class: 114
-      Script: {instanceID: 4644}
+      Script: {instanceID: 4460}
     - Class: 114
-      Script: {instanceID: 4708}
+      Script: {instanceID: 4646}
     - Class: 114
       Script: {instanceID: 4710}
     - Class: 114
-      Script: {instanceID: 4796}
+      Script: {instanceID: 4712}
     - Class: 114
-      Script: {instanceID: 4848}
+      Script: {instanceID: 4798}
     - Class: 114
-      Script: {instanceID: 4926}
+      Script: {instanceID: 4850}
     - Class: 114
       Script: {instanceID: 4928}
     - Class: 114
-      Script: {instanceID: 5104}
+      Script: {instanceID: 4930}
     - Class: 114
-      Script: {instanceID: 5338}
+      Script: {instanceID: 5106}
     - Class: 114
-      Script: {instanceID: 5524}
+      Script: {instanceID: 5340}
+    - Class: 114
+      Script: {instanceID: 5526}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -788,7 +788,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: 3a7a8580456939e277ab7399eea865fe
+      Hash: 9d88b38e4949701322b1d41efb8485d8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: lensEffect
@@ -1389,4 +1389,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/projekt2.unity
-  playerPath: C:/Users/maxbe/Downloads/projectfinalsteps.apk
+  playerPath: C:/Users/maxbe/Downloads/projectfinalsteps4.apk

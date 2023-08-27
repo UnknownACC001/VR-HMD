@@ -12,6 +12,8 @@ public class lensEffect : MonoBehaviour
     public Material blurMaterial; // Das Material mit dem Blur-Effekt
     public float setSlurStrength = 0.5f; // Die Stärke des Blur-Effekts
     private float blurStrength = 0.0f;
+    public float distortion = 0.2f; // Adjust this value to control the distortion
+    public Camera cam;
 
 
     private void Start()
@@ -28,6 +30,7 @@ public class lensEffect : MonoBehaviour
             {
 
                 blurStrength = setSlurStrength;
+                ApplyFisheyeEffect();
             }
             else
             {
@@ -53,6 +56,16 @@ public class lensEffect : MonoBehaviour
         {
             Graphics.Blit(source, destination);
         }
+    }
+    void ApplyFisheyeEffect()
+    {
+       
+        Matrix4x4 matrix = cam.projectionMatrix;
+
+        matrix[0, 2] = distortion;
+        matrix[1, 2] = distortion;
+
+        cam.projectionMatrix = matrix;
     }
 
 }
