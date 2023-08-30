@@ -12,7 +12,7 @@ public class KameraCheck : MonoBehaviour
     public bool vollstaendig = false;
     public XRSocketInteractor activateOrDeactivate;
     public List<XRSocketInteractor> socketInteractors = new List<XRSocketInteractor>();
-    //public Text textui;
+    
     public GameObject led;
     public Material green;
     public Material red;

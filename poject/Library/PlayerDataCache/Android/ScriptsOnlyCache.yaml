@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - Hand
     - HandController
     - KameraCheck
+    - ShowCorrectLenses
     - getInfoLinks
     - lensEffect
     Unity.InputSystem.dll:
@@ -183,11 +184,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6270}
     - Class: 114
       Script: {instanceID: 6504}
+    - Class: 114
+      Script: {instanceID: 21300}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
-      Script: {instanceID: 0}
-    - Class: 135
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -1518,7 +1519,13 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Postprocessing.Runtime.dll
     namespaceName: UnityEngine.Rendering.PostProcessing
     className: AmbientOcclusion
+  - hash:
+      serializedVersion: 2
+      Hash: e8fec514747dfad3fc033151cbf958d6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShowCorrectLenses
   platform: 13
   scenePathNames:
   - Assets/projekt2.unity
-  playerPath: C:/Users/maxbe/Downloads/projectfinalsteps7.apk
+  playerPath: C:/Users/maxbe/Downloads/projectfinalsteps9.apk
