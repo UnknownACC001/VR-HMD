@@ -5,12 +5,12 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class ShowCorrectLenses : MonoBehaviour
 {
-    
+
     public XRSocketInteractor hmdInSocket;
 
     public XRSocketInteractor getLens;
     public List<GameObject> lenses = new List<GameObject>();
-    
+
 
     private void Update()
     {
@@ -24,13 +24,14 @@ public class ShowCorrectLenses : MonoBehaviour
                     if (meshRenderer != null)
                     {
                         meshRenderer.enabled = false;
-                        // Rendering ausschalten
+                        
+
                     }
                 }
-                
+
             }
-            
+
         }
-       
+
     }
 }

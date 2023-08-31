@@ -6,23 +6,23 @@ using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.PostProcessing;
 
-public class lensEffect : MonoBehaviour
+public class LensEffect : MonoBehaviour
 {
-    
+
     public XRSocketInteractor lens;
     public XRSocketInteractor hmdInSocket;
-    
-    public PostProcessVolume postProcessingVolume1; // Drag your Post Processing Volume here
+
+    public PostProcessVolume postProcessingVolume1; 
     public PostProcessVolume postProcessingVolume2;
 
 
 
     private void Update()
     {
-        
+
         if (hmdInSocket.selectTarget != null)
         {
-            if(lens.selectTarget.name == "Linsen 2")
+            if (lens.selectTarget.name == "Linsen 2")
             {
                 postProcessingVolume1.enabled = true;
 
@@ -43,10 +43,10 @@ public class lensEffect : MonoBehaviour
         {
             postProcessingVolume1.enabled = false;
             postProcessingVolume2.enabled = false;
+
         }
-        
-        
+
+
     }
 
 }
-

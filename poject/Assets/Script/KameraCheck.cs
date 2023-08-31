@@ -8,15 +8,15 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class KameraCheck : MonoBehaviour
 {
-   
+
     public bool vollstaendig = false;
     public XRSocketInteractor activateOrDeactivate;
     public List<XRSocketInteractor> socketInteractors = new List<XRSocketInteractor>();
-    
+
     public GameObject led;
     public Material green;
     public Material red;
-    
+
 
     private void Update()
     {
@@ -40,17 +40,16 @@ public class KameraCheck : MonoBehaviour
         }
         if (vollstaendig)
         {
-            //textui.color= Color.green;
+           
             activateOrDeactivate.socketActive = true;
-            objectRenderer.material=green;
+            objectRenderer.material = green;
         }
         else
         {
-            //textui.color = Color.red;
+            
             activateOrDeactivate.socketActive = false;
-            objectRenderer.material=red;
+            objectRenderer.material = red;
+
         }
     }
-
 }
-
